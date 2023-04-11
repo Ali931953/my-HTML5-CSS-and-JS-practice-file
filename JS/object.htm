@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript Object</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        // var student = {
+        //     name: "Ali",
+        //     age:27,
+        //     cgpa:3.37,
+        //     leng:["Bangla","English"]
+        // }
+
+        // adding a constaructor 
+
+        // function Ali(name,age,lang){
+        //     this.name=name;
+        //     this.age = age;
+        //     this.cgpa = cgpa;
+        //     this.lang = lang;
+
+        // }
+
+        // var student1 = new Ali("Ali Ahammed",27,3.95["Banglali","Wnglish"]);
+        
+
+
+        // document.write(Ali.age);
+        // document.write(Ali.name);
+
+
+        // function Stt(name,age,cgpa,lang){
+        //     this.name = name;
+        //     this.age = age;
+        //     this.cgpa = cgpa;
+        //     this.lang = lang;
+
+
+        //     this.display = function (){
+        //          document.write(this.name);
+        //          document.write(this.age);
+        //          document.write(this.cgpa);
+        //          document.write(this.lang);
+
+
+        //     }
+        // }
+
+        // var student1 = new Stt("Ali",27,3.37,["Bangla","English"]);
+        // var student2 = new Stt("Ali ahammed",27,3.37,["Bangla","English"]);
+
+        //     student1.display();
+        //     student2.display();
+       
+    //     const person = {firstname: "Jhon",lastname:"Doe",age:50,eyecolor:"blue"};
+    //    document.getElementById("demo").innerHTML = person.firstname +" is "+ person.age + "years old";
+
+//     Object Methods
+
+// Objects can also have methods.
+
+// Methods are actions that can be performed on objects.
+
+// Methods are stored in properties as function definitions.
+// Property 	Property Value
+// firstName 	John
+// lastName 	Doe
+// age 	50
+// eyeColor 	blue
+// fullName 	function() {return this.firstName + " " + this.lastName;}
+
+// const person = {
+//     firstName: "Ali",
+//     lastName: " Ahammed",
+//     id      :931953,
+//     fullName: function(){
+//         return this.firstName + " "+ this.lastName;
+//     }
+// }
+
+// document.write(firstName)
+
+
+// how to creat an object
+// how to print the value of an object
+
+// adding a constructor
+// adding a function inside a constructor
+
+ function student(name,age,cgpa,lang){
+    this.name = name;
+    this.age = age;
+    this.cgpa = cgpa;
+    this.lang = lang;
+
+     this.display = function(){
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.cgpa);
+        console.log(this.lang);
+     }
+ }
+
+ var student1= new student("Ali",20,3.37,["Bangla","Englis"])
+
+ student1.display();
+// var student1 = {
+//     name: "Ali",
+//     age:20,
+//     cgpa:3.37,
+//     languse: ["Bangla","English"]
+// };
+// var student2 = {
+//     name:"Ahammed",
+//     age:20,
+//     cgpa:3.37,
+//     languse: ["Bangla","English"]
+// }
+
+console.log(student1);
+    </script>
+    
+</body>
+</html>

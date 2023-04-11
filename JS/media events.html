@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <video width="400" controls muted>
+        <source src="/video/IDM - Free IDM Download for lifetime - Free IDM Register for lifetime - Internet Download Manager.3gp">
+    </video>
+    
+    <script>
+        //audio / video events
+        // canplay, play,playing,pause,progress,ended,volumechange,waiting
+
+        const video = document.querySelector('video');
+        video.addEventListener("canplay",function(){
+            console.log("canplay");
+        });
+
+        video.addEventListener("play",function(){
+            console.log("play");
+        });
+
+        video.addEventListener("pause",function(){
+            console.log("Pause")
+        });
+
+        video.addEventListener("playing",function(){
+            console.log("Playing")
+        });
+
+        video.addEventListener("ended",function(){
+            console.log("Ended")
+        });
+
+        
+        video.addEventListener("volumechange",function(){
+            console.log("volumechange")
+        });
+    </script>
+</body>
+</html>  

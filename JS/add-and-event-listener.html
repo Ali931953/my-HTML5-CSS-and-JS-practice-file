@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .headingStyle{
+            color: rebeccapurple;
+            display: block;
+          
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>This is Ali</h1>
+    
+    <button>Click</button>
+
+    <script>
+
+        var button = document.querySelector("button");
+        button.innerHTML = "Click me";
+
+        button.addEventListener("click",function(){
+            alert("He")
+        });
+
+
+        var heading = document.querySelector("h1");
+
+        heading.addEventListener("mouseover",function(){
+            
+            heading.classList.add("headingStyle");
+
+        });
+
+        heading.addEventListener("mouseout",function(){
+            heading.classList.remove("headingStyle");
+        })
+    </script>
+</body>
+</html>

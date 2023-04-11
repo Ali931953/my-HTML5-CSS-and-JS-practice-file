@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        .style{
+            color: red;
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;}
+
+
+    </style>
+</head>
+<body>
+
+    <p id="paraid">This is a paragraph</p>
+    <button onclick="a()">Add style</button>
+    <button onclick="r()">Remove Style</button>
+
+   
+
+    <script>
+        function a(){
+            var add = document.querySelector("#paraid");
+            add.classList.add("style");
+        }
+
+        function r(){
+             var remove = document.querySelector("#paraid");
+            remove.classList.remove("style");
+        }
+    </script>
+</body>
+</html>

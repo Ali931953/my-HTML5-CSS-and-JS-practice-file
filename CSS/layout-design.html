@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Layout</title>
+    <style>
+        *{
+         box-sizing: border-box;
+         margin: 10px;
+         padding: 10px;   
+        }
+        body{
+            background-image: url(/121070329_348341293247898_7621506674850062419_n.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        
+           
+        }
+        a{
+            background-color: bisque;
+            padding: 10px;
+            border: 2px solid blueviolet;
+            margin: 10px;
+            display: inline-block;
+        }
+        .p1{
+            background-color: green;
+           max-width: 500px;
+           height: 200px;
+           overflow: scroll;
+
+          
+        }.p2{
+            background-color: red;
+            /* max-width: 50%; */
+          
+            max-width: 1000px;
+     
+        }
+        .row{
+
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        .skills-title{
+            font-size: 5rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .skills{
+            
+             
+             background-color: black;
+             color: white;
+             text-align: center;
+            
+            
+        
+        }.card{
+            width: 25%;
+            background-color: bisque;
+            padding: 0px; 
+            margin: 1rem;
+            color: black;
+           float: left;
+            
+        }
+        .card:hover{
+            box-shadow: 0.1rem 0.2rem rgba(239, 12, 12, 0.5);
+            opacity: 0.5;
+        }
+        .card-title{
+
+        }
+        .card-body{
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+        }
+        .tutorials{
+            background-color: aqua;
+            
+        }
+        #tutorials1{
+            background-color: orange;margin: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+   <section class="skills">
+    <h2 class="skills-title">Skills</h2>
+
+    <!-- card-1 -->
+    <div class="row">
+            <div class="card">
+            <h3 class="card-title">HTML5</h3>
+            <div class="card-body">
+                <p>Level: 4/5</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, error?</p>
+                <button>Learn More</button>
+            </div>
+            </div>
+    <!-- card-2 -->
+            <div class="card">
+                <h3 class="card-title">CSS3</h3>
+                <div class="card-body">
+                    <p>Level: 3.5</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, error?</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+    <!-- card-3 -->
+            <div class="card">
+                <h3 class="card-title">JavaScript</h3>
+                <div class="card-body">
+                    <p>Level: 3.5</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, error?</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+    </div>
+   </section>    
+  
+   <section class="tutorials">
+    <div class="tutorials-row">
+        <div id="tutorials1">this is div1</div>
+        <div id="tutorials2">this is div2</div>
+        <div id="tutorials3">this is div3</div>
+    </div>
+   </section>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright by Ali</p>
+        </div>
+    </footer>
+</body>
+</html>

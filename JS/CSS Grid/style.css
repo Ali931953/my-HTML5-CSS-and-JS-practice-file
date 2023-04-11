@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.border-primary-400{
+    width: 30px;
+    height: auto;
+    border-radius: 100%;
+    border: 2px solid;
+}
+.testimonial-grid{
+    padding-block: 2rem;
+    width: min(95%,70rem);
+    margin-inline: auto;
+
+}.testimonia
