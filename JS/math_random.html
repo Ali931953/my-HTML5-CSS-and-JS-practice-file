@@ -14,12 +14,29 @@
 </head>
 <body>
     
-    <img src="/img/a.jpg">
+    
     <h6>
         JavaScript Ranbdom
     </h6>
     <script>
+        var numofwon = 0;
+        var numoflost=0;
+      for(var i=1;i<=5;i++){
+        var guessNumber = parseFloat(prompt("Enter a number from 1 to 5:  "));
+        var randomNumber = Math.floor(Math.random()*5) +1;
+        if(guessNumber==randomNumber){
+            document.write("You have wone.random number:"+randomNumber+"<br>");
+            numofwon++
+        }
+        else{
+            document.write("You have Lost. Random number was : "+randomNumber+"<br>");
+            numoflost++
+        }
+      }
+        document.write("Number of won: "+numofwon+"<br>")
+       document.write("Numof lost: "+numoflost+"<br>")
         
+      
     </script>
 </body>
 </html>
